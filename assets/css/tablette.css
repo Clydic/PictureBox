@@ -1,0 +1,38 @@
+@media screen and (min-width : 551px) {
+    body{
+        font-size: 1.7em;
+    }
+    #maindiv{
+        display: flex;
+        height: 20%;
+    }
+    ul{
+        flex-wrap: wrap;
+        margin:auto;
+        
+    }
+    aside{
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-flow: column;
+        width:35%;
+        height : auto;
+        overflow-x: initial;
+        overflow-y: auto ;
+              
+    }
+     main{
+        width : 65% ;
+
+    }
+    img{
+        width : 90%;
+        margin: auto;
+    }
+    h2{
+        height: 6rem;
+    }
+    #comm{
+        font-size: 1.4em;
+    }
+} 

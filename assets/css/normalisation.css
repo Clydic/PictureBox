@@ -1,0 +1,114 @@
+body{
+    font-size: 1.5em;
+    width:90%;
+    display:flex;
+    flex-direction: column; 
+    color: blanchedalmond;
+    
+}
+#wrapper{
+    width: 100%;
+    margin:auto;
+    padding: 0.5em;
+}
+
+header{
+   
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    
+}
+
+nav, aside, main{
+    
+    background-color: rgb(150, 219, 93);
+    margin:1rem;
+}
+
+
+h1{
+    width:80%;
+    margin: auto;
+}
+
+
+nav,aside{
+    overflow-x: scroll;
+    
+}
+
+ul,aside{
+    display: flex;
+    flex-flow: nowrap;
+    
+    
+}
+
+
+
+h1,li , h2 , #comm{
+    text-align: center;
+    box-sizing: border-box; 
+    margin: auto;
+    border: 2px rgb(14, 75, 2) solid;
+    background-color: rgb(67, 122, 51);
+    /* background-color: rgb(64, 135, 175); */ 
+    
+    border-radius: 30px;
+    padding: 0.3em;
+}
+
+li{
+    
+    width: 32%;
+    font-size: 0.9em; 
+    list-style: none;
+    margin: 0.5em;
+    
+}
+
+
+ li:hover{
+     background-color: blueviolet;
+     cursor: pointer;
+ }
+
+
+ aside{
+    height: 5em;
+}
+
+img{
+    padding: 0.3em;
+    width:10rem;
+}
+#maindiv{
+    
+    box-sizing: border-box;
+    margin:auto;
+    font-size: 0.8em;
+
+}
+h2 , #comm{
+    box-sizing: border-box;
+    
+    margin: 2%;
+    border-radius: 7px;
+    
+    
+}
+#comm{
+    height: 8rem;
+    text-align: left;
+}
+h2{
+    height: 5rem;
+}
+main{
+    padding: 0.3rem;
+}
+#bigpicture{
+    box-sizing: border-box;
+    width: 100%;
+}
