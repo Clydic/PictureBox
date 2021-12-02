@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalisation.css">
     <link rel="stylesheet" href="assets/css/tablette.css">
     <link rel="stylesheet" href="assets/css/desktop.css">
     <title>My picture box</title>
 </head>
+
 <body>
     <div id="wrapper">
         <header>
-            <h1>My picture Box</h1>
-            <nav>
-                <ul>
-                    <li>Venise</li>
-                    <li>Montréal</li>
-                    <li>Munich</li>
-                    <li>Paris</li>
-                    <li>Nice</li>
-                    <li>Lisbonne</li>
-                </ul>
-            </nav>
+            <h1 class="border">My picture Box</h1>
         </header>
+        <nav class="">
+            <ul class="container list-item ">
+                <li class="border">Venise</li>
+                <li class="border">Montréal</li>
+                <li class="border">Munich</li>
+                <li class="border">Paris</li>
+                <li class="border">Nice</li>
+                <li class="border">Lisbonne</li>
+            </ul>
+        </nav>
         <div id="maindiv">
-            <aside>
+            <aside class="height_5em container list-item aside-m">
                 <img src="assets/img/20200803_0003.jpg" title="Libellule de profile" alt="Une joile libellule vu de profile qui se repose">
                 <img src="assets/img/P7247983_02.jpg" title="Libellule sur une feuille" alt="Une libellule qui vient de se poser">
                 <img src="assets/img/P7247983.jpg" title="Libellule sur une feuille" alt="img3">
@@ -32,12 +35,13 @@
                 <img src="assets/img/P7247998.jpg" title="Une jolie libellule posé à la verticale" alt="Une petite libellule posé à la verticale nous laissant voir le dessus de ses ailes">
                 <img src="assets/img/P7308269.jpg" title="Libellule jaune" alt="Une grosse libellule posé sur une pierre vu de derrière">
             </aside>
-            <main>
-                <h2 id="titrimg">Libellule de profile</h2>
+            <main class="container">
+                <h2 class="height_5em" id="titrimg">Libellule de profile</h2>
                 <img src="assets/img/20200803_0003.jpg" title="Libellule de profile" alt="Une jolie libellule vu de profile qui se repose" id="bigpicture">
-                <p id="comm">Une jolie libellule vu de profile qui se repose </p>
+                <p id="commentary">Une jolie libellule vu de profile qui se repose </p>
             </main>
         </div>
 </body>
-    <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
+
 </html>
