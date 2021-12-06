@@ -1,38 +1,38 @@
-@media screen and (min-width : 551px) {
-    body{
+@media screen and (min-width: 551px) {
+    body {
         font-size: 1.7em;
     }
-    #maindiv{
+    #maindiv {
         display: flex;
         height: 20%;
     }
-    ul{
+    .list-item {
         flex-wrap: wrap;
-        margin:auto;
-        
+        /* margin: auto; */
     }
-    aside{
-        flex-wrap: wrap;
+    aside {
         flex-direction: column;
         flex-flow: column;
-        width:35%;
-        height : auto;
+        width: 35%;
+        height: 60%;
         overflow-x: initial;
-        overflow-y: auto ;
-              
+        overflow-y: scroll;
     }
-     main{
-        width : 65% ;
-
+    nav>ul>li {
+        margin: 0.3em;
+        width: 30%;
     }
-    img{
-        width : 90%;
+    main {
+        width: 65%;
+    }
+    img {
+        width: 90%;
         margin: auto;
     }
-    h2{
+    h2 {
         height: 6rem;
     }
-    #comm{
+    #comm {
         font-size: 1.4em;
     }
-} 
+}
