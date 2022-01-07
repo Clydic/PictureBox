@@ -11,7 +11,7 @@ for (var i = 0; i < image.length; i++) {
 
 function affiche(element) {
     document.getElementById("titrimg").innerText = element.title;
-    document.getElementById("comm").innerText = element.alt;
+    document.getElementById("commentary").innerText = element.alt;
     bigImage.setAttribute("src", element.src);
     console.log("ok");
 
