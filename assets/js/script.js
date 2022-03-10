@@ -1,25 +1,21 @@
-var bigImage = document.getElementById("bigpicture");
-var titlePage = "My Picture Box2";
 var pathImage = "assets/img/"
 
 // bigImage.removeEventListener("click", function() { affiche(this) })
 
-function affiche(element) {
-    document.getElementById("titrimg").innerText = element.title;
-    document.getElementById("commentary").innerText = app.message;
-    bigImage.setAttribute("src", element.src);
-    bigImage.setAttribute("alt", element.alt);
-    bigImage.setAttribute("title", element.title);
-    console.log(bigImage);
-
-
-}
-
 var app = new Vue({
-    el: '#wrapper',
+    el: '#app',
     data: {
-        titlePage: titlePage,
+        titlePage: "My Picture Box",
         message: "Vous avez affiché cette page le " + new Date().toLocaleString(),
+        pathImage: "assets/img/",
+        nav: [
+            { text: "Venise" },
+            { text: "Montréal" },
+            { text: "Munich" },
+            { text: "Paris" },
+            { text: "Nice" },
+            { text: "Lisbonne" },
+        ],
         images: [{
                 src: pathImage + "20200803_0003.jpg",
                 title: "Libellule de profile",
@@ -55,14 +51,35 @@ var app = new Vue({
                 title: "Libellule jaune",
                 alt: "Une grosse libellule qui se repose sur une pierre"
             }
-        ]
+        ],
+        bigImage: {
+            src: pathImage + "20200803_0003.jpg",
+            alt: "Une jolie libellule vu de profile qui se repose",
+            title: "Libellule de profile"
+        }
     },
 
 })
 
-var image = document.querySelectorAll("img");
-for (var i = 0; i < image.length; i++) {
-    if (image[i] != bigImage) image[i].addEventListener("click", function() { affiche(this) });
+var images = document.querySelectorAll("img");
+for (var i = 0; i < images.length; i++) {
+    var bigPicture = document.getElementById("bigpicture");
+    if (images[i] != bigPicture) images[i].addEventListener("click", function() { affiche(this) });
+
+
+}
+
+///////////////////////////Functions/////////////////////////
+/**
+ *Change change the big picture, its title and its commentary 
+ * @param {HTMLElement} element 
+ */
+function affiche(element) {
+    app.bigImage.src = element.src;
+    app.bigImage.title = element.title;
+    app.bigImage.alt = element.alt;
+
+    console.log('ok');
 
 
 }
