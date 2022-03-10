@@ -13,7 +13,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1 class="border">My picture Box</h1>
+            <h1 class="border">{{ titlePage }}</h1>
         </header>
         <nav class="">
             <ul class="container list-item ">
@@ -27,13 +27,8 @@
         </nav>
         <div id="maindiv">
             <aside class="height_5em container list-item aside-m">
-                <img src="assets/img/20200803_0003.jpg" title="Libellule de profile" alt="Une joile libellule vu de profile qui se repose">
-                <img src="assets/img/P7247983_02.jpg" title="Libellule sur une feuille" alt="Une libellule qui vient de se poser">
-                <img src="assets/img/P7247983.jpg" title="Libellule sur une feuille" alt="img3">
-                <img src="assets/img/P7247987.jpg" title="Libellule dans les feuillages" alt="Un jolie spectacle volé à travers les feuillages">
-                <img src="assets/img/P7247990.jpg" title="Libellule vu de près" alt="Une libellule posé sur grosse feuille et vu de près">
-                <img src="assets/img/P7247998.jpg" title="Une jolie libellule posé à la verticale" alt="Une petite libellule posé à la verticale nous laissant voir le dessus de ses ailes">
-                <img src="assets/img/P7308269.jpg" title="Libellule jaune" alt="Une grosse libellule posé sur une pierre vu de derrière">
+                <img v-for="image in images" v-bind:src="image.src" v-bind:title="image.title" v-bind:alt="image.alt" />
+
             </aside>
             <main class="container">
                 <h2 class="height_5em" id="titrimg">Libellule de profile</h2>
@@ -41,7 +36,11 @@
                 <p id="commentary">Une jolie libellule vu de profile qui se repose </p>
             </main>
         </div>
+
+
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="assets/js/script.js"></script>
 
 </html>
