@@ -1,4 +1,4 @@
-var pathImage = "../assets/img/"
+var pathImage = "../assets/img/grande_image"
 
 // bigImage.removeEventListener("click", function() { affiche(this) })
 
