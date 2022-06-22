@@ -1,4 +1,4 @@
-var pathImage = "../assets/img/"
+var pathImage = "../assets/img/grande_image/"
 
 // bigImage.removeEventListener("click", function() { affiche(this) })
 
@@ -7,7 +7,7 @@ var app = new Vue({
     data: {
         titlePage: "My Picture Box",
         message: "Vous avez affiché cette page le " + new Date().toLocaleString(),
-        pathImage: "../assets/img/",
+        pathImage: "../assets/img/grande_image/",
         nav: [
             { text: "Venise" },
             { text: "Montréal" },
