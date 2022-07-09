@@ -5,7 +5,7 @@ var pathImage = "../assets/img/category/libellule/big_picture/"
 var app = new Vue({
     el: '#app',
     data: {
-        titlePage: "My Picture Box",
+        titlePage: "My Pictue Box",
         message: "Vous avez affiché cette page le " + new Date().toLocaleString(),
         nav: [
             { text: "Venise" },
