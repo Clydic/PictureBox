@@ -1,5 +1,3 @@
-
-
 // bigImage.removeEventListener("click", function() { affiche(this) })
 
 var app = new Vue({
@@ -8,10 +6,10 @@ var app = new Vue({
         titlePage: "My Picture Box",
         message: "Vous avez affiché cette page le " + new Date().toLocaleString(),
         category : "libellule",
-        pathImage : "../assets/img/category/",
+        path : "../assets/img/category/",
         nav: [
-            { text: "Venise" },
-            { text: "Montréal" },
+            { text: "Libellules", category:"libellule", images:libellule },
+            { text: "Chats" ,category:"cats", images:cats },
             { text: "Munich" },
             { text: "Paris" },
             { text: "Nice" },
@@ -19,18 +17,34 @@ var app = new Vue({
         ],
         images: libellule,
         bigImage: {
-            src: pathImage + "20200803_0003.jpg",
+            src: "../assets/img/category/libellule/big_picture/20200803_0003.jpg",
             alt: "Une jolie libellule vu de profile qui se repose",
             title: "Libellule de profile"
         }
     },
+    computed:{
+        pathImage : function (){
+            return this.path + this.category;
+        } 
+    },
+    methods:{
+        changeCategory : function(category_to_change, list_images){
+            this.images = list_images;
+            this.category = category_to_change;
+            this.bigImage = list_images[0];
+            this.bigImage.src=this.path+category_to_change+list_images[0].src;
+
+        }
+    }
+    
 
 })
 
 var images = document.querySelectorAll("img");
 for (var i = 0; i < images.length; i++) {
     var bigPicture = document.getElementById("bigpicture");
-    if (images[i] != bigPicture) images[i].addEventListener("click", function() { affiche(this) });
+    if (images[i] != bigPicture) images[i].addEventListener("click", 
+        function() { affiche(this) });
 
 
 }

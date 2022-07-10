@@ -17,19 +17,21 @@
         </header>
         <nav class="">
             <ul class="container list-item ">
-                <li v-for="item in nav" class="border">{{item.text}} </li>
+                <li v-for="item in nav" class="border" 
+                    v-on:click="changeCategory(item.category,item.images)">
+                    {{item.text}} 
+                </li>
+
             </ul>
         </nav>
         <div id="maindiv">
             <aside class="height_5em container list-item aside-m">
-                <img v-for="image in cats" v-bind:src="pathImage + category+image.src" v-bind:title="image.title" v-bind:alt="image.alt" />
-
+                <img v-for="image in images" v-bind:src="pathImage+image.src" v-bind:title="image.title" v-bind:alt="image.alt" />
             </aside>
             <main class="container">
                 <h2 class="height_5em" id="titrimg">{{bigImage.title}}</h2>
                 <img v-bind:src="bigImage.src" v-bind:title="bigImage.title" v-bind:alt="bigImage.alt" id="bigpicture">
                 <p id="commentary">{{bigImage.alt}}</p>
-                <test-template></test-template>
             </main>
         </div>
 

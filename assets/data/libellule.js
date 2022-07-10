@@ -1,4 +1,4 @@
-var big_picture = "big_picture/";
+var big_picture = "/big_picture/";
 var libellule = [{
                 src: big_picture + "20200803_0003.jpg",
                 title: "Libellule de profile",

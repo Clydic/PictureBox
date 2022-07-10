@@ -1,5 +1,5 @@
 //var category = "cats";
-var big_picture = "big_picture/";
+var big_picture = "/big_picture/";
 
 const cats=[{
                 src: big_picture + "20201004_0007_01.jpg",
