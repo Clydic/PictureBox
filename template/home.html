@@ -22,7 +22,7 @@
         </nav>
         <div id="maindiv">
             <aside class="height_5em container list-item aside-m">
-                <img v-for="image in images" v-bind:src="image.src" v-bind:title="image.title" v-bind:alt="image.alt" />
+                <img v-for="image in cats" v-bind:src="pathImage + category+image.src" v-bind:title="image.title" v-bind:alt="image.alt" />
 
             </aside>
             <main class="container">
@@ -37,6 +37,8 @@
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script src="assets/data/cats.js"></script>
+<script src="assets/data/libellule.js"></script>
 <script src="assets/js/script.js"></script>
 </script>
 </html>

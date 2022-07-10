@@ -4,3 +4,16 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+0	Picture_box.vim	/^normal! 0$/;"	m
+04|	Picture_box.vim	/^normal! 04|$/;"	m
+06|	Picture_box.vim	/^normal! 06|$/;"	m
+SessionLoad	Picture_box.vim	/^let SessionLoad = 1$/;"	v
+affiche	assets/js/script.js	/^function affiche(element) {$/;"	f
+pathImage	assets/js/script.js	/^var pathImage = "..\/assets\/img\/category\/libellule\/big_picture\/"$/;"	v
+s:l	Picture_box.vim	/^let s:l = 1 - ((0 * winheight(0) + 27) \/ 55)$/;"	v
+s:l	Picture_box.vim	/^let s:l = 11 - ((4 * winheight(0) + 13) \/ 27)$/;"	v
+s:l	Picture_box.vim	/^let s:l = 20 - ((8 * winheight(0) + 13) \/ 27)$/;"	v
+s:so_save	Picture_box.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	Picture_box.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	Picture_box.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+zt	Picture_box.vim	/^normal! zt$/;"	m
