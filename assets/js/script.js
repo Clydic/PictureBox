@@ -25,15 +25,26 @@ var app = new Vue({
     computed:{
         pathImage : function (){
             return this.path + this.category;
-        } 
+        },
+        bigPicture: function(){
+            return this.images[0];
+        },
+        cookie:function(){
+            return document.cookie("category="+this.category)
+        }
     },
     methods:{
         changeCategory : function(category_to_change, list_images){
             this.images = list_images;
             this.category = category_to_change;
-            this.bigImage = list_images[0];
-            this.bigImage.src=this.path+category_to_change+list_images[0].src;
+            this.bigImage.title = list_images[0].title;
+            this.bigImage.alt = list_images[0].alt;
+            this.bigImage.src=this.pathImage+this.images[0].src;
+            this.test();
 
+        },
+        test : function(){
+            console.log("on test l'inclusion")
         }
     }
     
