@@ -8,11 +8,10 @@ var app = new Vue({
         path : "../assets/img/category/",
         nav: [
             { text: "Libellules", category:"libellule", images:libellule },
+            { text: "Autres insectes", category:"other_bug", images:other_bugs },
             { text: "Chats" ,category:"cats", images:cats },
-            { text: "Munich" },
-            { text: "Paris" },
-            { text: "Nice" },
-            { text: "Lisbonne" },
+            { text: "Paysage", category:"landscape", images:landscape },
+            { text: "Autres", category:"other", images:other },
         ],
         images: libellule,
         bigImage: {
