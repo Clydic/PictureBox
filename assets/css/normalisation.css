@@ -61,9 +61,10 @@ nav>ul>li:hover {
     height: 5em;
 }
 
-img {
-    padding: 0.3em;
-    width: 10rem;
+aside>img {
+    padding: 30px;
+    width: auto;
+    height:20vh;
 }
 
 #maindiv {
@@ -88,4 +89,5 @@ h2,
 #bigpicture {
     box-sizing: border-box;
     width: 100%;
+    padding:0.3em
 }
