@@ -10,14 +10,9 @@ var libellule = [{
                 alt: "Une libellule qui vient de se poser"
             },
             {
-                src: big_picture + "P7247983.jpg",
-                title: "Libellule sur une feuille",
-                alt: "Une libellule qui vient de se poser"
-            },
-            {
-                src: big_picture + "P7247987.jpg",
-                title: "Libellule dans les feuillages",
-                alt: "Un joli spectacle volé à travers les feuillages"
+                src: big_picture + "libellule_rouge_accouple.jpg",
+                title: "Instant intime",
+                alt:"Deux libellules pris durant leurs ébats amoureux "
             },
             {
                 src: big_picture + "P7247990.jpg",
@@ -30,8 +25,15 @@ var libellule = [{
                 alt: "Une petite libellule posé à la verticale nous permettant d'admirer ses ailes"
             },
             {
-                src: big_picture + "P7308269.jpg",
-                title: "Libellule jaune",
-                alt: "Une grosse libellule qui se repose sur une pierre"
+                src: big_picture + "P7248007_01.jpg",
+                title: "Faire des rencontres",
+                alt: "Une libellule faisant la rencontre avec une punaise"
+                +"verte"
+            },
+            {
+                src: big_picture + "tenace.jpg",
+                title: "Ne rien lâcher",
+                alt: "Pour une petite brise peut sembler anodine"
+                +"pour d'autre ça devient un défi"
             }
         ];

@@ -1,5 +1,4 @@
 // bigImage.removeEventListener("click", function() { affiche(this) })
-
 var app = new Vue({
     el: '#app',
     data: {
@@ -29,9 +28,6 @@ var app = new Vue({
         bigPicture: function(){
             return this.images[0];
         },
-        cookie:function(){
-            return document.cookie("category="+this.category)
-        }
     },
     methods:{
         changeCategory : function(category_to_change, list_images){
@@ -40,12 +36,7 @@ var app = new Vue({
             this.bigImage.title = list_images[0].title;
             this.bigImage.alt = list_images[0].alt;
             this.bigImage.src=this.pathImage+this.images[0].src;
-            this.test();
-
         },
-        test : function(){
-            console.log("on test l'inclusion")
-        }
     }
     
 
